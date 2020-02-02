@@ -35,8 +35,8 @@ int main()
         addEdge(x, y, l);
     }
     memset(dist, INF, sizeof(dist));
-    for (int i = 0; i < e[start].size(); ++i)
-        dist[e[start][i].to] = e[start][i].length;
+    // for (int i = 0; i < e[start].size(); ++i)
+    //     dist[e[start][i].to] = e[start][i].length;
     dist[start] = 0;
 
     for (int k = 1; k <= n - 1; ++k)
